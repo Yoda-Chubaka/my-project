@@ -1,12 +1,16 @@
 var image;
+var greyImage;
 
 function upload() {
     var imgCanvas = document.getElementById("canvas1");
+    var imgCanvas2 = document.getElementById("canvas2");
     var fileInput = document.getElementById("input-file");
     // var fileName = fileInput.value;
     // alert("Chose" + fileName);
     image = new SimpleImage(fileInput);
+    greyImage = new SimpleImage(fileInput);
     image.drawTo(imgCanvas);
+    greyImage.drawTo()
 }
 
 function makeGrey() {
