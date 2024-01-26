@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(245, 184, 237);
+}
+
+
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.canvas-list {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.draw-box {
+    margin-bottom: 10px;
+    border: 1px solid rgb(32, 2, 82);
+    background-color: white;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+}
+
+.button-add-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
