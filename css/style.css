@@ -19,7 +19,7 @@ ul {
 
 .canvas-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 
@@ -35,7 +35,7 @@ ul {
 
 .options {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .button-add-photo {
