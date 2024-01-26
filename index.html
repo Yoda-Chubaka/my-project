@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-    <h1>My project</h1>
+    <h1>Upload and Display Image</h1>
     <ul class="canvas-list">
         <li id="draw-list">
             <canvas id="canvas1" class="draw-box">
@@ -21,8 +21,14 @@
 
     </canvas>
     <div class="options">
+        <!-- <p>Filename:</p>
         <input type="text" id="input-text">
-        <input type="button" id="input-button" class="button-add-photo" value="Upload" onclick="upload()">
+        <input type="button" id="input-button" class="button-add-photo" value="Upload" onclick="upload()"> -->
+        <input type="file" multiple="false" accept="image/*" id="input-file" onchange="upload()">
     </div>
+
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    
+    <script src="./js/index.js"></script>
 </body>
 </html>

@@ -28,7 +28,9 @@ ul {
 .draw-box {
     margin-bottom: 10px;
     border: 1px solid rgb(32, 2, 82);
+    border-radius: 4px;
     background-color: white;
+    width: 500px;
 }
 
 .options {
