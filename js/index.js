@@ -48,7 +48,6 @@ function doGreenScreen() {
     }
     if (bgImage === null || ! bgImage.complete()) {
         alert("Background not loaded");
-        return;
     }
     var output = new SimpleImage(fgImage.getWidth(), fgImage.getHeight());
         for (var pixel of fgImage.values()) {
@@ -62,7 +61,7 @@ function doGreenScreen() {
             output.setPixel(x, y, pixel);
         }
     }
-    // output.drawTo(canvasFg);
+    output.drawTo(canvasBg);
 }
 
 function clearCanvas() {

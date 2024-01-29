@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(245, 184, 237);
+    background-color: rgb(236, 240, 234);
 }
 
 
@@ -17,14 +17,13 @@ ul {
     padding-left: 0;
 }
 
-
 .section-color-grey-photo {
-    background-color: green;
+    background-color: rgb(6, 118, 170);
     margin-top: 40px;
 }
 
 .section-color-chromakey {
-    background-color: brown;
+    background-color: rgb(190, 86, 164);
     padding-bottom: 30px;
     margin-bottom: 40px;
 
@@ -34,9 +33,6 @@ ul {
     display: flex;
     justify-content: space-around;
 }
-
-
-
 
 .draw-box {
     margin-bottom: 10px;
@@ -69,23 +65,16 @@ ul {
     padding: 25px;
     margin: 0 auto;
     margin-top: 20px;
-    /* margin-bottom: 20px; */
 }
 
 .chromakey-list {
-    /* margin-left: auto;
-    margin-right: auto; */
     padding-right: -10px;
     
 }
 
-
 .chrom-text {
     margin-left: 5px;
 }
-/* .chromakey-button {
-    
-} */
 
 .chrom-buttons-box {
     width: 300px;
@@ -93,4 +82,18 @@ ul {
 }
 .chromakey-left-button {
     margin-right: 15px;
+}
+
+.onclick-button {
+    border: 1px solid grey;
+    border-radius: 1px;
+    padding: 5px;
+}
+
+.onclick-button:hover,
+.onclick-button:focus {
+    color: white;
+    background-color: green;
+    cursor: pointer;
+    border: 1px solid green;
 }
