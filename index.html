@@ -40,12 +40,12 @@
         <h1>Web page with chromakey</h1>
     <ul class="canvas-list">
         <li id="draw-list">
-            <canvas id="canvas1" class="draw-box">
+            <canvas id="fgCan" class="draw-box">
 
             </canvas>
         </li>
         <li id="draw-list">
-            <canvas id="canvas2" class="draw-box">
+            <canvas id="bgCan" class="draw-box">
 
             </canvas>
         </li>
@@ -57,20 +57,20 @@
             <li>
                 <p class="chrom-text">
                     Foreground Image:
-                    <input type="file" multiple="false" accept="image/*" id="input-file" onchange="upload()">
+                    <input type="file" multiple="false" accept="image/*" id="fgFile" onchange="loadForegroundImage()">
                 </p>
             </li>
             <li>
                 <p class="chrom-text">
                     Background Image:
-                    <input type="file" multiple="false" accept="image/*" id="input-file" onchange="upload()">
+                    <input type="file" multiple="false" accept="image/*" id="bgFile" onchange="loadBackgroundImage()">
                 </p>
         </li>
         </ul>
        
         <div class="chrom-buttons-box">
-            <input type="button" id="button-make-gray" class="chromakey-button chromakey-left-button" value="Combine photos" onclick="makeGrey()">
-        <input type="button" id="button-make-gray" class="chromakey-button" value="Clean the canvas" onclick="makeGrey()">
+            <input type="button" id="button-make-gray" class="chromakey-button chromakey-left-button" value="Combine photos" onclick="doGreenScreen()">
+            <input type="button" id="button-make-gray" class="chromakey-button" value="Clean the canvas" onclick="clearCanvas()">
         </div>
     </div>
 
