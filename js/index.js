@@ -7,14 +7,11 @@ var canvasBg;
 
 function upload() {
     var imgCanvas = document.getElementById("canvas1");
-    var imgCanvas2 = document.getElementById("canvas2");
     var fileInput = document.getElementById("input-file");
-    // var fileName = fileInput.value;
-    // alert("Chose" + fileName);
     image = new SimpleImage(fileInput);
-    greyImage = new SimpleImage(fileInput);
+    
     image.drawTo(imgCanvas);
-    greyImage.drawTo();
+    // greyImage.drawTo();
 }
 
 function makeGrey() {
@@ -25,8 +22,11 @@ function makeGrey() {
         pixel.setBlue(avg);
     }
     var imgCanvas = document.getElementById("canvas2");
+    var fileInput = document.getElementById("input-file");
+    greyImage = new SimpleImage(fileInput);
     image.drawTo(imgCanvas);
 }
+
 
 function loadForegroundImage() {
     var imgFile = document.getElementById("fgFile");
