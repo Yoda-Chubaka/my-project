@@ -23,8 +23,11 @@ ul {
     margin-top: 40px;
 }
 
-.section-color-chromokey {
+.section-color-chromakey {
     background-color: brown;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+
 }
 
 .canvas-list {
@@ -58,4 +61,36 @@ ul {
 
 .grey-button {
     margin-right: 50px;
+}
+
+.chromakey-box {
+    width: 490px;
+    background-color: rgb(189, 189, 247);
+    padding: 25px;
+    margin: 0 auto;
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
+}
+
+.chromakey-list {
+    /* margin-left: auto;
+    margin-right: auto; */
+    padding-right: -10px;
+    
+}
+
+
+.chrom-text {
+    margin-left: 5px;
+}
+/* .chromakey-button {
+    
+} */
+
+.chrom-buttons-box {
+    width: 300px;
+    margin: 0 auto;
+}
+.chromakey-left-button {
+    margin-right: 15px;
 }

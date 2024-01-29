@@ -36,8 +36,8 @@
     </section>
 
 
-    <section class="section-color-chromokey">
-        <h1>Web page with chromokey</h1>
+    <section class="section-color-chromakey">
+        <h1>Web page with chromakey</h1>
     <ul class="canvas-list">
         <li id="draw-list">
             <canvas id="canvas1" class="draw-box">
@@ -52,25 +52,28 @@
     </ul>
 
     </canvas>
-    <div class="options">
-        <ul>
+    <div class="chromakey-box">
+        <ul class="chromakey-list">
             <li>
-                <p>
+                <p class="chrom-text">
                     Foreground Image:
                     <input type="file" multiple="false" accept="image/*" id="input-file" onchange="upload()">
                 </p>
             </li>
             <li>
-                <p>
+                <p class="chrom-text">
                     Background Image:
                     <input type="file" multiple="false" accept="image/*" id="input-file" onchange="upload()">
                 </p>
         </li>
         </ul>
        
-        <input type="button" id="button-make-gray" class="grey-button" value="Combine photos" onclick="makeGrey()">
-        <input type="button" id="button-make-gray" class="grey-button" value="Clean the canvas" onclick="makeGrey()">
+        <div class="chrom-buttons-box">
+            <input type="button" id="button-make-gray" class="chromakey-button chromakey-left-button" value="Combine photos" onclick="makeGrey()">
+        <input type="button" id="button-make-gray" class="chromakey-button" value="Clean the canvas" onclick="makeGrey()">
+        </div>
     </div>
+
     </section>
 
     <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
