@@ -67,11 +67,6 @@ ul {
     margin-top: 20px;
 }
 
-.chromakey-list {
-    padding-right: -10px;
-    
-}
-
 .chrom-text {
     margin-left: 5px;
 }
@@ -97,3 +92,4 @@ ul {
     cursor: pointer;
     border: 1px solid green;
 }
+

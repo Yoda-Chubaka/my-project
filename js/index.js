@@ -2,9 +2,8 @@ var image;
 var greyImage;
 var fgImage = null;
 var bgImage = null;
-var canvasFg = document.getElementById("fgCan");
-var canvasBg = document.getElementById("bgCan");
-var greenThreshold = 240;
+var canvasFg;
+var canvasBg;
 
 function upload() {
     var imgCanvas = document.getElementById("canvas1");
@@ -32,24 +31,26 @@ function makeGrey() {
 function loadForegroundImage() {
     var imgFile = document.getElementById("fgFile");
     fgImage = new SimpleImage(imgFile);
+    canvasFg = document.getElementById("fgCan");
     fgImage.drawTo(canvasFg);
 }
 
 function loadBackgroundImage() {
     var imgFile = document.getElementById("bgFile");
     bgImage = new SimpleImage(imgFile);
+    canvasBg = document.getElementById("bgCan");
     bgImage.drawTo(canvasBg);
 }
 
 function doGreenScreen() {
     if (fgImage === null || ! fgImage.complete()) {
         alert("Foreground not loaded");
-        return;
     }
     if (bgImage === null || ! bgImage.complete()) {
         alert("Background not loaded");
     }
     var output = new SimpleImage(fgImage.getWidth(), fgImage.getHeight());
+    var greenThreshold = 240;
         for (var pixel of fgImage.values()) {
         var x = pixel.getX();
         var y = pixel.getY();
