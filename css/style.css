@@ -17,6 +17,16 @@ ul {
     padding-left: 0;
 }
 
+
+.section-color-grey-photo {
+    background-color: green;
+    margin-top: 40px;
+}
+
+.section-color-chromokey {
+    background-color: brown;
+}
+
 .canvas-list {
     display: flex;
     justify-content: space-around;
@@ -36,6 +46,8 @@ ul {
 .options {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 .button-add-photo {

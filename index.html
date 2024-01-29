@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-    <h1>Upload and Display Image</h1>
+    <section class="section-color-grey-photo">
+        <h1>Upload and Display Image</h1>
     <ul class="canvas-list">
         <li id="draw-list">
             <canvas id="canvas1" class="draw-box">
@@ -32,6 +33,45 @@
         <input type="file" multiple="false" accept="image/*" id="input-file" onchange="upload()">
         <input type="button" id="button-make-gray" class="grey-button" value="Make Greyscale" onclick="makeGrey()">
     </div>
+    </section>
+
+
+    <section class="section-color-chromokey">
+        <h1>Web page with chromokey</h1>
+    <ul class="canvas-list">
+        <li id="draw-list">
+            <canvas id="canvas1" class="draw-box">
+
+            </canvas>
+        </li>
+        <li id="draw-list">
+            <canvas id="canvas2" class="draw-box">
+
+            </canvas>
+        </li>
+    </ul>
+
+    </canvas>
+    <div class="options">
+        <ul>
+            <li>
+                <p>
+                    Foreground Image:
+                    <input type="file" multiple="false" accept="image/*" id="input-file" onchange="upload()">
+                </p>
+            </li>
+            <li>
+                <p>
+                    Background Image:
+                    <input type="file" multiple="false" accept="image/*" id="input-file" onchange="upload()">
+                </p>
+        </li>
+        </ul>
+       
+        <input type="button" id="button-make-gray" class="grey-button" value="Combine photos" onclick="makeGrey()">
+        <input type="button" id="button-make-gray" class="grey-button" value="Clean the canvas" onclick="makeGrey()">
+    </div>
+    </section>
 
     <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
     
